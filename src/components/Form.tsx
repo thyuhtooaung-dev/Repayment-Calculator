@@ -80,7 +80,9 @@ export default function FormInput({ onCalculate, onClear }: FormInputProps) {
             </h1>
           </div>
           <span
-            className={"underline text-slate-300 cursor-pointer"}
+            className={
+              "underline text-slate-300 cursor-pointer hover:text-slate-500 duration-300"
+            }
             onClick={handleClearAll}
           >
             Clear All
