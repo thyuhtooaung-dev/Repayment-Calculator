@@ -67,6 +67,12 @@ export default function FormInput({ onCalculate, onClear }: FormInputProps) {
 
   const handleClearAll = () => {
     setFormData({ amount: "", term: "", rate: "", type: "" });
+    setErrors({
+      amount: false,
+      term: false,
+      rate: false,
+      type: false,
+    });
     onClear();
   };
 
